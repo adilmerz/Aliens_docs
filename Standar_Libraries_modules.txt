@@ -1,0 +1,137 @@
++ LIBRARIES / Modules (ready to import) :
+
+
+ + I/O
+	|_ Text
+	|	|	
+	|	|_ print
+	|	|_ input / cin / scanf	
+	|
+	|_ Sound
+	|	|
+	|	|_ loadSound
+	|	|_ saveSound
+	|	|_ playSound
+	|
+	|_ Images
+	|	|
+	|	|_ loadImage
+	|	|_ save Image
+	|
+	|_ .....
+ 
+ 
+ + Math
+	|
+	|_ Operators
+	|	|
+	|	|_ add
+	|	|_ mul
+	|	|_ sub
+	|	|_ mod
+	|
+	|_ abs
+	|_ sqrt
+	|_ factorial
+	|_ even // zawji
+	|_ odd	// fardi
+	|_ ...
+	
+// Crypt booo7dha hhhh fiha bzf dkhedma .
+ + Crypt
+	|
+	|_ encrypt
+	|_ decrypt
+	|_ ....
+	
+
+// Lists = Arrays
+ + Arrays
+	|
+	|_ toDic			// to dictionary
+	|_ toTuple			// to tuple
+	|_ toJson			// ...
+	|_ toTree			// b7al |_ 
+	|_ toString			// ..
+	|_ merge			// dmej all arrays L 1 array
+	|_ loop				// Loop through it 
+	|_ sort				// Sort by ascii code
+	|_ from				// Return a new array from index x to last
+	|_ isArray			// Check x if is array (enumerable)
+	|_ of				// array men object exmpl : array.of(True) => [True,]
+	|_ fill				// 3meer array b chi 7aja
+	|_ randFill			// 3mer array b random values
+	|_ find				// find value in that array
+	|_ len				// length dyal array (1 based machi b7al index) 
+	|_ indexOf			// return  index of value
+	|_ join				// exmpl : 'Days are :'.join(',', weekdays) ghadi t3ti : Days are : Monday, ...etc
+	|_ pop				// remove last/first item mn array
+	|_ push				// add item to the end / start
+	|_ removeAt			// remove by index
+	|_ insertAt			// insert by index
+	|_ zero_all			// Make all items of array 0
+	|_ null_all			// Make all items Null
+	|_ slice			// Return a new array from index x to y (b7al from ta9riban ghi u can chose from>to)
+	|_ ....
+
+// Bon ghankhedmo presque b 60% dakchi d Arrays
++ Dictionaries
+	|
+	|_ keys , vals , sort ..etc + dakchi d arrays
+
+
+// Get - post ka bidaya
+ - Requests
+	|
+	|_ post
+	|_ get
+	|_ ping
+	|_ ....
+
+// on Disk Files/Folders
+ - Files / Directories
+	|
+	|_ exists
+	|_ open
+	|_ close
+	|_ create
+	|_ write
+	|_ read
+	|_ delete
+	|_ copy
+	|_ past
+	|_ move
+	|_ rename
+	|_ hide
+	|_ ....
+
+
+// Json rah kafi w 9adi gharad bla manzido xml , we9t ...
+ - json
+	|
+	|_ fromDic
+	|_ fromArray
+	|_ fromTree
+	|_ fromString
+	|_ ...
+	
+
+// this will have 2 Versions for Linux and for windows (I will explain mnin nweslo liha)
+ - Memory
+ 	|_ Process
+	|	|_ start		// start or launch a new Process
+	|	|_ kill			// force kill/terminate a proc
+	|	|_ suspend		// force suspend process
+	|	|_ resume 		// force resume a process
+	|	|_ getModules		// get all modules loaded by the process
+	|	|_ getProcs		// return list of procs
+	|	|_ getProcByName	// return 1 process object
+	|	|_ getProcById		// return 1 process Object 
+	|	|_ openProcess		// return Handle to the process
+	|
+	|_ rpm				// read process memory		(for hacking mostly xd)
+	|_ wpm				// write process memory		(for hacking mostly ..)
+	|_ vProt			// Implementation of VirtualProtect() ..
+	|_ llib				// Implemetation of LoadLibrary
+	|_ closeHandle			// close an opened handle 
+	|_ flib				// Implementation of FreeLibrary 
