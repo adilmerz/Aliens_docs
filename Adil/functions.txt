@@ -1,0 +1,114 @@
+		Fonction	=====> 		Menning
+		# THIS IS THE FULYL SUPPORTED PRE-DEFINED FUNCTIONS #
+		# implemented it's import table	#
+		# Thanks adil !	#
+		
+------------------------------------------------------------------------------------------------------------------------------------
+    // Coverting Funcs
+		# this require : load @base -OR- from @base load @convert
+
+        	$tonumber(value , convert_to)  =====>  convert value to number , convert_to can be : 'float' , 'int' , 'long'
+		$totext(value)  =====>  convert value to text(string)
+		$tojson(Array/List)  =====>  convert list to json
+		$toxml(Array/List)  =====>  convert list to xml
+		$tobin(Path)  =====>  convert file to bin
+		$totxt(Path)  =====>  convert file to txt
+		$toascii(char)  =====>  convert char to ascii
+		$todict(List)  =====>  convert list to dictionary
+------------------------------------------------------------------------------------------------------------------------------------
+    // Type Checking Funcs
+		# No loading required :D
+
+        	$isNumber(value)	return true if value is number
+ 	 	$isText(value)  =====>  return true if value is text
+		$isDate(value)  =====>  return true if value is date
+		$isTime(value)  =====>  return true if value is time
+		$isNull(value)  =====>  return true if value is null
+		$isEqual(value1,value2)  =====>  return true if value1 = value2
+		$isMatch(text,regex expression)   =====>  return true if text respect regex expression
+------------------------------------------------------------------------------------------------------------------------------------
+    // List basic Functions
+		# this does not require anything :D
+	
+        	$add(list,object)  =====>  add object to list 
+		$insert(list,object,index)  =====>  insert object in list
+		$update(list,object) =====> update object from list
+		$remove(list,object)  =====>  delete object from list
+		$sort(list, 'asc|desc')  =====>  return list sorted ascending 
+		$reverse(list)  =====>  return list reverse 
+		$pick(list,index)  =====>  return object  
+		$find(list,name of column,value)  =====>  return index or list of index 
+		$size(list)  =====>  return size of list  
+	 	$clear(list)  =====>  Delete all element of list
+------------------------------------------------------------------------------------------------------------------------------------
+    // Math Functs  
+		# this require : load @math
+
+        	$sqrt(number)  =====>  calculer square root 
+		$fabs(number)  =====>  calculer absolute value
+		$pow(number,power)  =====>  calculer power  
+		$fact(number)  =====>  calculer factorial 
+		$log(number)  =====>  calculer logarithm
+		$exp(number)  =====>  calculer exponential
+		$sin(number)  =====>  calculer sinus 
+		$cos(number)  =====>  calculer cosine
+		$tan(number)  =====>  calculer tangent
+		$asin(number)  =====>  calculer arcsinus 
+		$acos(number)  =====>  calculer arccosine
+		$atan(number)  =====>  calculer arctangent
+		$rand(val init,val fin) / calc,rand()  =====>  return random number 
+------------------------------------------------------------------------------------------------------------------------------------
+    // date and time funcs
+		# this require : load @base -OR- from @base load @datetime
+
+        	$date(format : ""YYYY/MM/DD"")  =====>  return date now
+		$time(format : ""h:m:s:ms"")  =====>  return time now
+		$addDays(date,value)  =====>  add days to date
+		$diffDays(date1,date2)  =====>  get diff between tow date
+		$months(date)  =====>  get month of date
+		$days(date)  =====>  get day of date
+		$years(date)  =====>  get year of date
+		$hours(time)  =====>  get hour of time
+		$minutes(time)	  =====>  get minut of time
+		$seconds(time)  =====>  get second of time
+------------------------------------------------------------------------------------------------------------------------------------
+    // Strings Functions
+		# this does not require anything :D
+
+        	$lower(text)  =====>  text to lowercase
+		$upper(text)  =====>  text to oppercase
+		$split(text,character or text )  =====>  spliting text 
+		$len(text)  =====>  length of text 
+	     |- $contains(text,text cherch)  =====>  return index of first caracter 
+To merge   <-|           one prototype : $contains()
+             |- $containAll(text,array text value)  =====>  return list of index of first caracters
+		$inbetween(mytext,text1,text2)  =====>  return the portion of a string between two values
+             |- $replace(text,value1,value2)  =====>  replaces a given string within the string
+To merge   <-|           one prototype : $replace()
+             |- $replaceAll(mytext,array1 text value,array2 text value)  =====>  replaces a given array or value in the string sequentially using an array
+		$slice(text,index1,length)  =====>  return the portion of string specified by the start and length parameters
+		$count(text,value)  =====>  return number of times the text is present
+------------------------------------------------------------------------------------------------------------------------------------
+    // Files Functions
+		# this require : load @base -or- from @base load @io
+
+        $f_read(path)  =====>  return a file content with format text
+		$f_write(path,text)  =====>  write text in file
+		$f_copy(path1,path2,true/false) =====> copy file to directory
+        $f_move(filePath , toPath)  ===> move to another path .
+		$f_delete(path) ====> delete file 
+		$f_name(path) =====> return a name of file
+		$f_directory(path) =====> return directory of file
+		$f_extension(path) =====> return a extension of file
+		$f_size(path)  =====> return file's bytes number
+        $f_append(path , "")
+        $f_loop_bytes(item){... } ==> item takes each byte/char
+        $f_loop_lines(line){ ... }  ==> line takes each line .
+------------------------------------------------------------------------------------------------------------------------------------
+    // Global Use funcs
+		# this does not require anything :D
+
+        $typeOf(var)  =====> return a type of variable
+        $nameOf(var)  =====> return name of variable // this is sooo usefull !! :D
+		$system(cmd) =====> apply a command of your system
+		$als_test('statement') ====> return true if your statement is correct
